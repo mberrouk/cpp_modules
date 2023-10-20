@@ -28,7 +28,11 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 	   //^---> The beginning of function
 			
 			// What the program does
-
+			std::cout << "Hello World!\n";
 		}
 	  //^---> End of function
 	```
+		* `std::cout` is the __charcacter output stream__. It is pronounced "see-out".
+		* `<<` is an operator that comes right after it.
+		* `"Hello World!\n"` is what's being outputted here. You need double quots around text. The `\n` is a special charcacter that indicates a new line.
+		* `;` is a punctuation that tells the computer that your are at the end of a statement. It is similar to a period in a sentnce.
