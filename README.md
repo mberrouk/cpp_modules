@@ -20,7 +20,8 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 	- C++, like most programming languge, runs line by line, from top to bottom.
 
 	- Here is the structure of a C++ program:
-	```
+
+```
 		#include <iostream>
 				// ^---> Include libraries
 	
@@ -32,7 +33,8 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 			std::cout << "Hello World!\n";
 		}
 	  //^---> End of function
-	```
+	
+```
 		
 		* `std::cout` is the __charcacter output stream__. It is pronounced "see-out".
 		
