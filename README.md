@@ -41,6 +41,9 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 					
 				```
 		
+		* `#include <iostream>` This is know as a pre-processor directive. It instructs the compiler to locate the file that contains code for a library known as `iostream`.
+		This library contains code that allows for input and output, such as displaying data in the terminal window or reading input from your keyboard.
+
 		* `std::cout` is the __charcacter output stream__. It is pronounced "see-out".
 		
 		* `<<` is an operator that comes right after it.
@@ -48,3 +51,5 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 		* `"Hello World!\n"` is what's being outputted here. You need double quots around text. The `\n` is a special charcacter that indicates a new line.
 		
 		* `;` is a punctuation that tells the computer that your are at the end of a statement. It is similar to a period in a sentnce.
+
+		* `//` is for a comment. The compiler will ignore everything after `//` to the end of the line.
