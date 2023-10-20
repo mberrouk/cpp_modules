@@ -21,25 +21,25 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 
 	- Here is the structure of a C++ program:
 
-```
-	#include <iostream>
-			// ^---> Include libraries
+						```
+							#include <iostream>
+									// ^---> Include libraries
 
-	int		main()
-	{		//^---> The main function
-//	^
-//	|---> The beginning of function
-
-
-		std::cout << "Hello World!\n";
-		// What the program does
+							int		main()
+							{		//^---> The main function
+						//	^
+						//	|---> The beginning of function
 
 
-	}
-//	^
-//	|---> End of function
-	
-```
+								std::cout << "Hello World!\n";
+								// What the program does
+
+
+							}
+						//	^
+						//	|---> End of function
+							
+						```
 		
 		* `std::cout` is the __charcacter output stream__. It is pronounced "see-out".
 		
