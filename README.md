@@ -29,9 +29,12 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 	{		//^---> The main function
 //	^
 //	|---> The beginning of function
-		
-		// What the program does
+
+
 		std::cout << "Hello World!\n";
+		// What the program does
+
+
 	}
 //	^
 //	|---> End of function
