@@ -21,10 +21,10 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 	- Here is the structure of a C++ program:
 	```
 		#include <iostream>
-						// ^---> Include libraries
+					// ^---> Include libraries
 	
 		int		main()
-		{			//^---> The main function
+		{		//^---> The main function
 	   //^---> The beginning of function
 			
 			// What the program does
