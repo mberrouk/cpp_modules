@@ -14,3 +14,21 @@ As the name implies, C++ was derived from the C language. __Bjarne 's__ goal was
 	- Difference between C and C++ :
 		- C++ was developed as an extension of C, and both languages have almost the same syntax.
 		- The main Difference between C and C++ support classes and objects, while C does not.
+
+### HELLO WORLD !
+
+	- C++, like most programming languge, runs line by line, from top to bottom.
+	- Here is the structure of a C++ program:
+	```
+		#include <iostream>
+						// ^---> Include libraries
+	
+		int		main()
+		{			//^---> The main function
+	   //^---> The beginning of function
+			
+			// What the program does
+
+		}
+	  //^---> End of function
+	```
