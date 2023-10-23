@@ -1,12 +1,29 @@
 #ifndef PHONEBOOK_H
 #define PHONEBOOK_H
 
-#include <iostream>
 #include "Contact.hpp"
+#include <iomanip>
+#include <locale>
+
+#define FIELD_WIDTH 10
+
+enum Field {
+	LASTN,
+	FIRSTN,
+	NICKN,
+	NUM,
+	DARKSCR
+};
 
 class PhoneBook {
+	Contact list[8];
+	int len;
 	public:
-		int	read_command(std::string);
+		PhoneBook() : list(), len (0) {};
+		int		read_command (std::string);
+		void	get_data();
+		void	add(str, str, str, str, str);
+		void	search();
 };
 
 #endif // !PHONEBOOK_H
