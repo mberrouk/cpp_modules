@@ -6,7 +6,7 @@
 /*   By: mberrouk <mberrouk@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/FIELD_WIDTH/21 18:00:26 by mberrouk          #+#    #+#             */
-/*   Updated: 2023/10/23 20:01:03 by mberrouk         ###   ########.fr       */
+/*   Updated: 2023/10/23 20:32:59 by mberrouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ str		format_str(str s) {
 
 void	PhoneBook::search() {
 	int i;
+	char choise;
 	
 	std::cout << std::setfill('-') << std::setw(46) << "\n";
 	std::cout << std::setfill(' ') << std::left\
@@ -72,8 +73,23 @@ void	PhoneBook::search() {
 			<< std::setw(FIELD_WIDTH) << format_str(list[i].get_field(LASTN)) << '|' \
 			<< std::setw(FIELD_WIDTH) << format_str(list[i].get_field(NICKN)) << '|' \
 		<< "\n";
+		//	<< std::setw(FIELD_WIDTH) \
+		//<< "\n";
 	}
 	std::cout << std::setfill('-') << std::setw(46) << "\n";
+	std::cout << "=-=> Entre index of contact 0-7: ";
+	std::cin >> choise;
+	switch ((int) (choise - 48)) {
+		case 0:
+			std::cout << "i am 0";
+			break;
+		case 1:
+			std::cout << "i am 1";
+			break;
+		default:
+			std::cout << "ERROR " << choise - 48;
+			break;
+	}
 }
 
 int		PhoneBook::read_command(std::string s) {
