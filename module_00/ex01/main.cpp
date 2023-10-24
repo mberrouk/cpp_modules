@@ -6,25 +6,22 @@
 /*   By: mberrouk <mberrouk@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 16:31:25 by mberrouk          #+#    #+#             */
-/*   Updated: 2023/10/23 16:40:14 by mberrouk         ###   ########.fr       */
+/*   Updated: 2023/10/24 18:55:11 by mberrouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PhoneBook.hpp"
+#include "main.hpp"
 
 int	main()
 {
-	std::string s;
+	str s;
 	PhoneBook book;
 
 	while (true)
 	{
-		std::cout << "*> Enter command 'ADD, SEARCH, EXIT' ~~~> ";
-		if (!std::getline(std::cin >> std::ws, s))
-		{
-			std::cout << "\nTerminate the execution..." << std::endl;
-			std::exit(1);
-		}
+		std::cout << "<*> Enter command |ADD|SEARCH|EXIT| ~~~> ";
+		if (!std::getline(std::cin, s))
+			ft_exit();
 		switch (book.read_command(s))
 		{
 			case 1:
@@ -32,6 +29,7 @@ int	main()
 				break;
 			case 2:
 				book.search();
+				std::cin.clear();
 				break;
 			case 3:
 				std::exit(0);
@@ -40,6 +38,7 @@ int	main()
 				std::cout << "Invalid choice. Please try again..." << std::endl;
 				break;
 		}
+		std::cin.clear();
 		std::cout << std::endl;
 	}
 	return (0);

@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*   main.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mberrouk <mberrouk@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 14:56:02 by mberrouk          #+#    #+#             */
-/*   Updated: 2023/10/24 19:58:25 by mberrouk         ###   ########.fr       */
+/*   Created: 2023/10/24 18:34:28 by mberrouk          #+#    #+#             */
+/*   Updated: 2023/10/24 18:57:51 by mberrouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-#define CONTACT_HPP
+#ifndef MAIN_HPP
+#define MAIN_HPP
 
-#include <iostream>
+#include "PhoneBook.hpp"
+#include <iomanip>
+#include <locale>
+#include <string>
 
-typedef std::string str;
+#define FIELD_WIDTH 10
 
-class Contact{
-	str l_name;
-	str f_name;
-	str nickname;
-	str number;
-	str darksecret;
-	public:
-		void	set_contact(str, str, str, str, str);
-		str		get_field(int);
-		void	print_info(void);
-};
+bool	isNonPrint(char c);
+void	print_head_rows(void);
+void	ft_exit(void);
+str		format_str(str s);
 
-#endif // !CONTACT_HPP
+#endif // !MAIN_HPP

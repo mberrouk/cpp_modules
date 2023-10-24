@@ -6,13 +6,14 @@
 #    By: mberrouk <mberrouk@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/21 16:19:16 by mberrouk          #+#    #+#              #
-#    Updated: 2023/10/23 14:35:25 by mberrouk         ###   ########.fr        #
+#    Updated: 2023/10/24 18:49:07 by mberrouk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME     = phoneBook
 FLAGS    = -Wall      -Wextra        -Werror      -std=c++98
-SRCS     = main.cpp   PhoneBook.cpp  Contact.cpp
+
+SRCS     = main.cpp   PhoneBook.cpp  Contact.cpp  utils.cpp
 C        = c++
 
 all      : $(NAME)

@@ -1,0 +1,10 @@
+Field	PhoneBook.hpp	/^enum Field {$/
+Mmain.cpp	main.cpp	/^int	main()$/
+add	PhoneBook.cpp	/^void	PhoneBook::add(str l, str f, str n, str num, /
+format_str	PhoneBook.cpp	/^str		format_str(str s) {$/
+get_data	PhoneBook.cpp	/^void	PhoneBook::get_data() {$/
+get_field	Contact.cpp	/^str		Contact::get_field(int index) {$/
+read_command	PhoneBook.cpp	/^int		PhoneBook::read_command(std::string s) {$/
+search	PhoneBook.cpp	/^void	PhoneBook::search() {$/
+set_contact	Contact.cpp	/^void	Contact::set_contact(str l, str f, str n, str/
+str	Contact.hpp	/^typedef std::string str;$/

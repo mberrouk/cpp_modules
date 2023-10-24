@@ -2,10 +2,6 @@
 #define PHONEBOOK_H
 
 #include "Contact.hpp"
-#include <iomanip>
-#include <locale>
-
-#define FIELD_WIDTH 10
 
 enum Field {
 	LASTN,
