@@ -6,7 +6,7 @@
 /*   By: mberrouk <mberrouk@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 18:34:28 by mberrouk          #+#    #+#             */
-/*   Updated: 2023/10/24 18:57:51 by mberrouk         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:11:00 by mberrouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 #define MAIN_HPP
 
 #include "PhoneBook.hpp"
+#include <iostream>
 #include <iomanip>
-#include <locale>
-#include <string>
 
-#define FIELD_WIDTH 10
+enum Field {
+	FIRSTN,
+	LASTN,
+	NICKN,
+	NUM,
+	DARKSCR
+};
 
-bool	isNonPrint(char c);
-void	print_head_rows(void);
-void	ft_exit(void);
-str		format_str(str s);
+bool is_non_print(char c);
 
 #endif // !MAIN_HPP
